@@ -1,0 +1,41 @@
+body{
+    font-family: 'Comic Sans MS', cursive;
+    color: #000000;
+}
+.bloc{
+	margin-top: 20px;
+}
+#result{
+	color: #890345;
+	font-size: 21pt;
+}
+
+#sub{
+	background-color: #890345;
+	color: #ffffff;
+}
+#sub:hover{
+	color: #9CA404;
+}
+
+
+.option-btn{
+    margin-bottom: 5pt;
+    
+}
+.navbar{
+    background-color: #890345;
+    color:#ffffff;
+}
+.option-btn:hover{
+    
+    background-color: #890345;
+    color:#ffffff;
+}
+.content{
+	margin-bottom: 130px;
+
+}
+.text-footer{
+	color:#890345;
+}

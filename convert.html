@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Convertisseur de temps
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="dist\css\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\myStyle.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>-->
+                <a class="navbar-brand brand" href="#">Convertisseur Unité</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container content">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8  col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 ">
+                <div class="row bloc">
+                    <div class="row">
+                    <div class="col-xs-4">
+
+                        <button id="time" class="option-btn"><img class="img img-responsive" src="images/time-green.png">Temps</button>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <button id="area" class="option-btn"><img class="img img-responsive" src="images/square-green.png">Sperficie</button>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <button id="volume" class="option-btn"><img class="img img-responsive" src="images/volum-green.png">Volume</button>
+
+                    </div>
+                    </div>  
+                    <div class="row">
+                    <div class="col-xs-4">
+                        <button id="long" class="option-btn"><img class="img img-responsive" src="images/ruler-green.png">Distance</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button id="poids" class="option-btn"><img class="img img-responsive" src="images/weight-green.png">Poids</button>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <button id="temperature" class="option-btn"><img class="img img-responsive" src="images/thermo-green.png">Température</button>
+                    </div>
+                </div>
+                </div>
+                <div class="row bloc">
+                    <form method='post'>
+                        <div class="col-md-4 col-sm-4  col-xs-6">
+                            <select id="unit1" class="form-control input-md">
+				<option value="seconde">Seconde</option>
+				<option value="minute">Minute</option>
+				<option value="heure">Heure</option>
+			</select>
+                        </div>
+                        <div class="col-md-4 col-sm-4  col-xs-6">
+                            <select id="unit2" class="form-control input-md">
+				<option value="seconde">Seconde</option>
+				<option value="minute">Minute</option>
+				<option value="heure">Heure</option>
+			</select>
+                        </div>
+                        <div class="col-md-4 col-sm-4  col-xs-6">
+                            <input type="text" id="val" name="val" class="form-control input-md" placeholder="valeur à convertir" />
+                        </div>
+                    </form>
+                </div>
+                <div class="row bloc">
+                    <div class="col-md-4 col-xs-6">
+
+                        <button type="submit" id="sub" class="btn btn-md">Convertir</button>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <span id="result"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+            <span class="text-muted text-footer">Ce projet a été réalisé en utilisant Jquery,  Ajax ,Bootstrap, PHP </span>
+        </div>
+    </footer>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
